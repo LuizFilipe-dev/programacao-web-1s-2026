@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 480px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #1a1a1a;
+  margin-bottom: 0.4rem;
+}
+
+.subtitulo {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.area-input {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.area-input input {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.area-input input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.area-input button {
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.area-input button:hover {
+  background-color: #357abd;
+}
+
+.area-input button:active {
+  transform: scale(0.98);
+}
+
+/* Caixa de resultado */
+.caixa-resultado {
+  background-color: #f8f9ff;
+  border: 1px solid #dde3f5;
+  border-radius: 8px;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.serie-texto {
+  font-size: 15px;
+  color: #333;
+  word-break: break-all;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.divisor {
+  border: none;
+  border-top: 1px solid #dde3f5;
+  margin-bottom: 1rem;
+}
+
+.soma-label {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.soma-valor {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4a90e2;
+}
+
+/* Console */
+.console {
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+  font-family: monospace;
+  font-size: 13px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  line-height: 1.7;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+.console .titulo-console {
+  font-size: 11px;
+  color: #585b70;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.console .c-verde  { color: #a6e3a1; }
+.console .c-azul   { color: #89b4fa; }
+
+/* Erro */
+.erro {
+  font-size: 14px;
+  color: #9b1c1c;
+  background-color: #fde8e8;
+  border: 1px solid #f5a3a3;
+  border-radius: 8px;
+  padding: 12px 14px;
+}

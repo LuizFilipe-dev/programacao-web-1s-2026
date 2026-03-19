@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 440px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #1a1a1a;
+  margin-bottom: 0.4rem;
+}
+
+.subtitulo {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.area-input {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.area-input input {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.area-input input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.area-input button {
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.area-input button:hover {
+  background-color: #357abd;
+}
+
+.area-input button:active {
+  transform: scale(0.98);
+}
+
+.titulo-tabuada {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead tr {
+  background-color: #4a90e2;
+  color: white;
+}
+
+thead th {
+  padding: 10px 14px;
+  font-size: 14px;
+  text-align: center;
+}
+
+tbody tr {
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.15s;
+}
+
+tbody tr:hover {
+  background-color: #f0f6ff;
+}
+
+tbody td {
+  padding: 10px 14px;
+  font-size: 15px;
+  text-align: center;
+  color: #333;
+}
+
+tbody td:last-child {
+  font-weight: bold;
+  color: #4a90e2;
+}
+
+.erro {
+  font-size: 14px;
+  color: #9b1c1c;
+  background-color: #fde8e8;
+  border: 1px solid #f5a3a3;
+  border-radius: 8px;
+  padding: 12px 14px;
+}
