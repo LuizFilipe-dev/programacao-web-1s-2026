@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adivinhe o Número</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Adivinhe o número</h1>
+    <p class="subtitulo">Estou pensando em um número de 1 a 20. Consegue adivinhar?</p>
+
+    <div class="area-input">
+      <input type="number" id="campo" placeholder="Digite um número..." min="1" max="20" />
+      <button onclick="verificar()">Tentar</button>
+    </div>
+
+    <div class="mensagem" id="mensagem">Diga um número para começar!</div>
+    <div class="tentativas" id="tentativas">Tentativas: 0</div>
+    <div class="historico" id="historico"></div>
+
+    <button class="btn-novo" id="btn-novo" onclick="novoJogo()">Jogar de novo</button>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

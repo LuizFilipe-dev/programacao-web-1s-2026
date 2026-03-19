@@ -19,7 +19,7 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 440px;
+  max-width: 480px;
 }
 
 h1 {
@@ -75,11 +75,11 @@ h1 {
   transform: scale(0.98);
 }
 
-.mensagem {
+.resultado {
   font-size: 15px;
   padding: 14px 16px;
   border-radius: 8px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   min-height: 52px;
   display: flex;
   align-items: center;
@@ -89,51 +89,99 @@ h1 {
   transition: all 0.2s;
 }
 
-.mensagem.maior {
-  background-color: #fff8e1;
-  color: #b45309;
-  border-color: #f6c944;
-}
-
-.mensagem.menor {
-  background-color: #e8f0fe;
-  color: #1a56db;
-  border-color: #93b4f5;
-}
-
-.mensagem.acertou {
+.resultado.vitoria {
   background-color: #e6f9ed;
   color: #166534;
   border-color: #6ee7a0;
 }
 
-.tentativas {
+.resultado.derrota {
+  background-color: #fde8e8;
+  color: #9b1c1c;
+  border-color: #f5a3a3;
+}
+
+.resultado.empate {
+  background-color: #fff8e1;
+  color: #b45309;
+  border-color: #f6c944;
+}
+
+/* Placar */
+.placar-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1.2rem;
+}
+
+.placar-item {
+  flex: 1;
+  background-color: #e6f9ed;
+  border: 1px solid #6ee7a0;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}
+
+.placar-item.empate {
+  background-color: #fff8e1;
+  border-color: #f6c944;
+}
+
+.placar-item.derrota {
+  background-color: #fde8e8;
+  border-color: #f5a3a3;
+}
+
+.placar-numero {
+  display: block;
+  font-size: 26px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.placar-label {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Console */
+.historico-titulo {
   font-size: 13px;
   color: #888;
-  margin-bottom: 0.8rem;
+  margin-bottom: 6px;
 }
 
-.historico {
+.console {
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+  font-family: monospace;
   font-size: 13px;
-  color: #aaa;
-  margin-bottom: 1.2rem;
-  min-height: 20px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  min-height: 80px;
+  max-height: 160px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+  line-height: 1.7;
 }
 
-.btn-novo {
+.console .log-vitoria  { color: #a6e3a1; }
+.console .log-derrota  { color: #f38ba8; }
+.console .log-empate   { color: #f9e2af; }
+
+.btn-reset {
   width: 100%;
   padding: 10px;
-  font-size: 15px;
-  font-weight: bold;
-  background-color: #e8f0fe;
-  color: #1a56db;
-  border: 1px solid #93b4f5;
+  font-size: 14px;
+  background-color: transparent;
+  color: #888;
+  border: 1px solid #ddd;
   border-radius: 8px;
   cursor: pointer;
-  display: none;
   transition: background-color 0.2s;
 }
 
-.btn-novo:hover {
-  background-color: #d0e2fc;
+.btn-reset:hover {
+  background-color: #f5f5f5;
 }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedra, Papel ou Tesoura</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Pedra, Papel ou Tesoura</h1>
+    <p class="subtitulo">Digite sua escolha e veja quem ganha!</p>
+
+    <div class="area-input">
+      <input type="text" id="campo" placeholder="pedra, papel ou tesoura..." />
+      <button onclick="jogar()">Jogar</button>
+    </div>
+
+    <div class="resultado" id="resultado">Faça sua escolha para começar!</div>
+
+    <div class="placar-box">
+      <div class="placar-item">
+        <span class="placar-numero" id="vitoria">0</span>
+        <span class="placar-label">Vitórias</span>
+      </div>
+      <div class="placar-item empate">
+        <span class="placar-numero" id="empate">0</span>
+        <span class="placar-label">Empates</span>
+      </div>
+      <div class="placar-item derrota">
+        <span class="placar-numero" id="derrota">0</span>
+        <span class="placar-label">Derrotas</span>
+      </div>
+    </div>
+
+    <div class="historico-titulo">Histórico do console:</div>
+    <div class="console" id="console"></div>
+    <button class="btn-reset" onclick="resetar()">Resetar placar</button>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
