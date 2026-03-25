@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Projeto Interativo</h1>
+
+        <!-- CONTADOR -->
+        <h2>Contador: <span id="contador">0</span></h2>
+        <button id="btnMais">+</button>
+        <button id="btnMenos">-</button>
+
+        <!-- INPUT TEXTO -->
+        <h2>Digite uma mensagem</h2>
+        <input type="text" id="inputTexto" placeholder="Digite e pressione Enter">
+        <p>Caracteres (sem espaço): <span id="contadorCaracteres">0</span></p>
+
+        <!-- AREA DE TEXTO -->
+        <div id="areaTexto"></div>
+
+        <!-- LISTAS -->
+        <h2>Adicionar Lista</h2>
+        <select id="tipoLista">
+            <option value="ul">Lista não ordenada</option>
+            <option value="ol">Lista ordenada</option>
+        </select>
+        <button id="btnLista">Adicionar Lista</button>
+
+        <div id="areaListas"></div>
+
+        <!-- RESET -->
+        <br><br>
+        <button id="btnReset">Resetar Tudo</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

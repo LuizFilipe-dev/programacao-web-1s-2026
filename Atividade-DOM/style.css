@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #636365, #424243);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 15px 0;
+}
+
+button {
+    background: #667eea;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: #5a67d8;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #667eea;
+}
+
+select {
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    margin-top: 10px;
+    outline: none;
+}
+
+#areaTexto p {
+    background: #f1f1f1;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 6px;
+}
+
+#areaListas {
+    margin-top: 15px;
+    text-align: left;
+}
+
+ul, ol {
+    margin-top: 10px;
+    padding-left: 20px;
+}
